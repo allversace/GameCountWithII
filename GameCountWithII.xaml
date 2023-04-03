@@ -1,0 +1,17 @@
+<Window x:Class="WpfApp11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="800" WindowStyle="None" AllowsTransparency="True" Background="Gray" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Content="Закрыть" HorizontalAlignment="Left" Margin="699,10,0,0" VerticalAlignment="Top" Height="46" Width="91" FontSize="20" Click="Button_Click"/>
+        <Label Content="Введите число" HorizontalAlignment="Left" Margin="22,81,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="WriteChislo" HorizontalAlignment="Left" Margin="166,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" TextAlignment="Center" FontSize="20" Background="LightGray" Height="33" PreviewKeyDown="WriteChislo_PreviewKeyDown" PreviewTextInput="WriteChislo_PreviewTextInput"/>
+        <Label Content="Введенное число ИИ" HorizontalAlignment="Left" Margin="22,198,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="WriteChisloII" HorizontalAlignment="Left" Margin="227,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" TextAlignment="Center" FontSize="20" Background="LightGray" Height="33" IsEnabled="False"/>
+        <Button x:Name="Search" Content="Сыграть" HorizontalAlignment="Center" Margin="0,268,0,0" VerticalAlignment="Top" FontSize="20" Click="Search_Click"/>
+    </Grid>
+</Window>
